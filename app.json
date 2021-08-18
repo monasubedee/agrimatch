@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "agrimatch",
+    "slug": "agrimatch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist":{
+        "NSPhotoLibraryUsageDescription": "Allow AgriMatch to access your photos in order to add user profile/crop photos.",
+        "NSLocationWhenInUseUsageDescription":"AgriMatch would like to access your location to find out nearby farmers/middlemen.",
+        "UIBackgroundModes":[
+          "location",
+          "fetch"
+        ]
+      },
+      "config":{
+        "googleMapsApiKey":"AIzaSyCE3vH_85cmVyeaJrK4TcYHqUwq2VqSZms"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config":{
+        "googleMaps":{
+          "apiKey":"AIzaSyA9zMMl7v6_RQrODO87mkGXhiHWkb0qVxk"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
